@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent in ChatGPT — YouCam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="site-header__left">
+    <button class="header-hamburger" id="hamburgerBtn" aria-label="menu"><img src="assets/YCO/icons/mb_nav.png" alt=""></button>
+    <a href="#" class="site-header__logo">
+      <img src="assets/YCO/logos/Logo.png" alt="YCO logo">
+    </a>
+    <nav class="main-nav">
+      <a class="main-nav__link" href="#">Product</a>
+      <a class="main-nav__link" href="#">Use Case</a>
+      <a class="main-nav__link" href="#">API</a>
+      <a class="main-nav__link" href="#">Pricing</a>
+    </nav>
+  </div>
+  <div class="site-header__right">
+    <a class="btn btn-primary btn-header" href="#">Log In / Sign Up</a>
+  </div>
+</header>
+
+<!-- ============ Mobile side menu ============ -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <img src="assets/YCO/logos/mb_Logo.png" alt="YCO logo" class="mobile-menu__logo">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="close"><img src="assets/YCO/icons/mb_nav_close.png" alt=""></button>
+  </div>
+  <a class="mobile-menu__link" href="#">Log In / Sign Up</a>
+  <a class="mobile-menu__link" href="#">Product</a>
+  <a class="mobile-menu__link" href="#">Use Case</a>
+  <a class="mobile-menu__link" href="#">API</a>
+  <a class="mobile-menu__link" href="#">Pricing</a>
+</div>
+
+<main>
+
+  <!-- ============ Topbanner (image left / text right) ============ -->
+  <section class="agent-topbanner">
+    <div class="container agent-topbanner__inner">
+      <div class="agent-topbanner__media agent-topbanner__media--bordered">
+        <video src="assets/media/topbanner.mp4" autoplay loop muted playsinline></video>
+      </div>
+      <div class="agent-topbanner__text">
+        <h1>Create with YouCam AI Agent, right in the conversation.</h1>
+        <p>Describe what you want, and YouCam AI Agent builds it — then keep refining in the same chat until it's exactly right.</p>
+        <a class="btn btn-primary btn-topbanner-cta" href="#">Try AI Agent in ChatGPT ▶</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Connect to AI Tools (3col) ============ -->
+  <section class="section connect-section">
+    <div class="container section-head">
+      <h2>Connect YouCam to the AI tools you love</h2>
+      <p>Bring professional photo editing straight into your favorite AI tools.</p>
+    </div>
+    <div class="container tool-cards">
+      <div class="tool-card">
+        <div class="tool-card__media"><img src="assets/media/tool-chatgpt.png" alt="ChatGPT"></div>
+        <span class="tool-card__status">Released</span>
+        <h3 class="tool-card__title">ChatGPT</h3>
+        <a class="tool-card__link" href="#">CONNECT IN CHATGPT <span class="tool-card__link-icon">›</span></a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card__media"><img src="assets/media/tool-claude.png" alt="Claude"></div>
+        <span class="tool-card__status">Coming Soon</span>
+        <h3 class="tool-card__title">Claude</h3>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card__media"><img src="assets/media/tool-gemini.png" alt="Gemini"></div>
+        <span class="tool-card__status">Coming Soon</span>
+        <h3 class="tool-card__title">Gemini</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ One AI Agent, three creative modes (3col) ============ -->
+  <section class="section modes-section">
+    <div class="container section-head">
+      <h2>One AI Agent, three creative modes</h2>
+      <p>Use your own words to edit photos, build new visuals, and explore beauty or fashion ideas.</p>
+    </div>
+    <div class="container mode-cards">
+      <div class="mode-card">
+        <div class="mode-card__media">
+          <video src="assets/media/mode-photo-editing.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="mode-card__body">
+          <span class="mode-card__tag">Photo Editing</span>
+          <h3 class="mode-card__title">Chat Your Way to Pro Edits</h3>
+          <p class="mode-card__desc">Remove objects, change backgrounds, brighten a photo, or combine several requests in one prompt. YouCam AI Agent will recognize and execute every command.</p>
+        </div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-card__media">
+          <video src="assets/media/mode-visual-creation.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="mode-card__body">
+          <span class="mode-card__tag">Visual Creation</span>
+          <h3 class="mode-card__title">You Decide the Concept. AI Builds the Visual.</h3>
+          <p class="mode-card__desc">Describe a greeting card, a new background, a visual style, or a group scene. Follow up with changes until the composition feels complete.</p>
+        </div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-card__media">
+          <video src="assets/media/mode-beauty-fashion.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="mode-card__body">
+          <span class="mode-card__tag">Beauty &amp; Fashion</span>
+          <h3 class="mode-card__title">Explore your Next Look Through Chat</h3>
+          <p class="mode-card__desc">Describe a hairstyle, makeup mood, clothes, or accessories. YouCam AI Agent turns the words into a look you can evaluate and refine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Zig-zag (3 rows) ============ -->
+  <section class="section zigzag-section">
+    <div class="container">
+      <div class="zigzag">
+        <div class="zigzag__row">
+          <div class="zigzag__text">
+            <h3>Make several edits in one conversation</h3>
+            <p>Give YouCam AI Agent a complete set of changes at once. It understands the request as one creative task instead of making you work tool by tool. Try asking: "Change the background to a beach, add a vintage filter, and apply a summer frame."</p>
+            <a class="btn btn-primary" href="#">Try It Now</a>
+          </div>
+          <div class="zigzag__media">
+            <video src="assets/media/zigzag-01.mp4" autoplay loop muted playsinline></video>
+          </div>
+        </div>
+
+        <div class="zigzag__row">
+          <div class="zigzag__media">
+            <video src="assets/media/zigzag-02.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="zigzag__text">
+            <h3>Refine results with follow-up chats</h3>
+            <p>YouCam keeps the context of the edit. Ask for a warmer tone, more sparkle, or softer edges without restating the entire request. Keep Chatting: "Make it warmer, add sparkle, and soften the edges."</p>
+            <a class="btn btn-primary" href="#">Try It Now</a>
+          </div>
+        </div>
+
+        <div class="zigzag__row">
+          <div class="zigzag__text">
+            <h3>Create beyond conventional photo editing</h3>
+            <p>Change your mind mid-edit, combine ideas, or start over completely. YouCam AI Agent follows wherever the conversation goes.<br><strong>Try asking:</strong> "Actually, put me in something more editorial — add statement earrings too."</p>
+            <a class="btn btn-primary" href="#">Try It Now</a>
+          </div>
+          <div class="zigzag__media">
+            <img src="assets/media/zigzag-03.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ Explore what you can do (feature grid) ============ -->
+    <div class="explore-block">
+      <div class="container section-head">
+        <h2>Explore what you can do with YouCam AI Agent</h2>
+        <p>Bring chat-based editing, visual creation, and virtual styling into the AI assistant you already use.</p>
+      </div>
+      <div class="container feature-grid">
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-edit-photos-through-chat.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Edit Photos through Chat</h4>
+            <p>Remove objects, change backgrounds, apply filters, and make detailed touch-ups.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-explore-beauty-fashion.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Explore Beauty and Fashion</h4>
+            <p>Try hairstyles, makeup, clothes, and accessories by describing the look you want.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-enhance-image-quality.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Enhance Image Quality</h4>
+            <p>Ask to make an image clearer, brighter, or more polished using natural language.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-combine-multiple-photos.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Combine Multiple Photos</h4>
+            <p>Merge people, backgrounds, or visual elements into one cohesive composition.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-create-designs-scenes.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Create Designs and New Scenes</h4>
+            <p>Build greeting cards, themed layouts, image styles, and shareable visual concepts.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__media"><img src="assets/media/feature-handle-several-requests.png" alt=""></div>
+          <div class="feature-item__body">
+            <h4>Handle Several Requests at Once</h4>
+            <p>Combine multiple instructions in one prompt and let the AI interpret them together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Start Creating CTA ============ -->
+  <section class="section start-cta-section">
+    <div class="container section-head">
+      <h2>Start creating with YouCam AI Agent</h2>
+      <p>Open YouCam in your AI tools, or explore plans to find the option that fits your workflow.</p>
+    </div>
+    <div class="start-cta-btn-wrap">
+      <a class="btn btn-primary btn-uppercase" href="#">VIEW PRICING</a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="faq-title">YouCam AI Agent FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item is-open">
+          <button class="faq-item__q">
+            <span>What is the YouCam AI Connector?</span>
+            <img class="faq-item__chevron" src="assets/page/icon_down.svg" alt="">
+          </button>
+          <div class="faq-item__a"><p>It brings YouCam into an AI assistant so you can analyze, edit, and transform photos from the conversation where your request begins.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>Which AI assistants work with YouCam?</span>
+            <img class="faq-item__chevron" src="assets/page/icon_down.svg" alt="">
+          </button>
+          <div class="faq-item__a"><p>YouCam AI Agent currently works with ChatGPT, with Claude and Gemini support coming soon.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>How do I connect YouCam to ChatGPT?</span>
+            <img class="faq-item__chevron" src="assets/page/icon_down.svg" alt="">
+          </button>
+          <div class="faq-item__a"><p>Click "Connect in ChatGPT" above and follow the prompts to link your YouCam account inside ChatGPT.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>What can I ask YouCam AI Agent to do?</span>
+            <img class="faq-item__chevron" src="assets/page/icon_down.svg" alt="">
+          </button>
+          <div class="faq-item__a"><p>You can ask it to edit photos, create new visuals, or explore beauty and fashion looks — all through natural conversation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>Can I refine a result with another message?</span>
+            <img class="faq-item__chevron" src="assets/page/icon_down.svg" alt="">
+          </button>
+          <div class="faq-item__a"><p>Yes, YouCam keeps the context of your edit so you can keep refining with follow-up messages in the same chat.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="assets/YCO/logos/footer_logo.png" alt="YCO logo" class="site-footer__logo">
+      <p class="site-footer__copyright">2023 © Perfect Corp. All Rights Reserved.</p>
+      <button class="lang-switch" id="langSwitchBtn">
+        <img src="assets/YCO/icons/ico_language.png" alt="">
+        <img class="lang-switch__chevron" src="assets/YCO/icons/Icon_close.svg" alt="">
+      </button>
+    </div>
+    <div class="site-footer__cols">
+      <div class="site-footer__col">
+        <p class="site-footer__col-title">Product</p>
+        <a href="#">Photo Enhance</a>
+        <a href="#">Object removal</a>
+        <a href="#">Remove background</a>
+        <a href="#">Colorize</a>
+        <a href="#">Lighting</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__col-title">Support</p>
+        <a href="#">Pricing</a>
+        <a href="#">Mobile download</a>
+        <a href="#">Blogs</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__col-title">Legal</p>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Legal notice</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
