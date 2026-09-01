@@ -126,7 +126,8 @@ h1,h2,h3,h4,p{margin:0;}
 .agent-topbanner__text{display:flex;flex-direction:column;gap:12px;flex:1 1 auto;min-width:0;}
 .agent-topbanner__text h1{font-size:36px;font-weight:700;line-height:1.2;color:#15171f;}
 .agent-topbanner__text p{font-size:19px;line-height:26px;color:#212529;max-width:434px;}
-.btn-topbanner-cta{width:320px;max-width:100%;margin-top:8px;}
+.agent-topbanner__ctas{display:flex;flex-direction:column;gap:12px;margin-top:8px;}
+.btn-topbanner-cta{width:320px;max-width:100%;margin-top:0;}
 
 /* ===================================================================
    Connect to AI Tools (3col)
