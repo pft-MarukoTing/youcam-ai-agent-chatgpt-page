@@ -71,6 +71,7 @@ h1,h2,h3,h4,p{margin:0;}
 .btn-primary{background:var(--brand);border-color:var(--brand);color:#fff;}
 .btn-outline{background:transparent;border-color:var(--brand);color:var(--brand);}
 .btn-uppercase{text-transform:uppercase;letter-spacing:.02em;}
+.btn-play-icon{flex:0 0 auto;margin-left:8px;color:currentColor;}
 
 /* ===================================================================
    Header
@@ -146,13 +147,15 @@ h1,h2,h3,h4,p{margin:0;}
 .tool-card__title{font-size:32px;font-weight:600;line-height:1.25;color:#000;}
 .tool-card__link{
   font-weight:600;font-size:18px;line-height:26px;color:var(--text-strong);
-  text-decoration:underline;display:inline-flex;align-items:center;gap:8px;
+  text-decoration:none;display:inline-flex;align-items:center;gap:8px;
 }
+.tool-card__link-text{text-decoration:underline;}
 .tool-card__link-icon{
   display:inline-flex;align-items:center;justify-content:center;
-  width:24px;height:24px;flex:0 0 24px;border-radius:50%;background:var(--brand);color:#fff;
-  font-size:14px;text-decoration:none;
+  width:24px;height:24px;flex:0 0 24px;border-radius:50%;background:var(--brand);
+  text-decoration:none;
 }
+.tool-card__link-icon img{width:16px;height:16px;display:block;}
 
 /* ===================================================================
    One AI Agent, three creative modes (3col)
@@ -178,9 +181,10 @@ h1,h2,h3,h4,p{margin:0;}
 =================================================================== */
 .zigzag{display:flex;flex-direction:column;gap:80px;}
 .zigzag__row{display:flex;align-items:center;gap:51px;}
-.zigzag__text{flex:0 0 500px;display:flex;flex-direction:column;gap:20px;align-items:flex-start;}
+.zigzag__text{flex:0 0 500px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;}
 .zigzag__text h3{font-size:38px;font-weight:700;line-height:1.2;color:#292621;}
 .zigzag__text p{font-size:22px;line-height:36px;color:#15171f;}
+.zigzag__text .btn{margin-top:8px;}
 .zigzag__media{flex:1 1 auto;min-width:0;aspect-ratio:600/424;border-radius:16px;}
 
 /* ===================================================================
@@ -302,7 +306,10 @@ h1,h2,h3,h4,p{margin:0;}
 
   .tool-card__title{font-size:26px;}
 
+  .mode-card__desc{font-size:16px;line-height:24px;}
+
   .zigzag{gap:88px;}
+  .zigzag__row{gap:24px;}
   .zigzag__text h3{font-size:26px;}
   .zigzag__text p{font-size:17px;line-height:26px;}
   .zigzag__text .btn{width:100%;}
