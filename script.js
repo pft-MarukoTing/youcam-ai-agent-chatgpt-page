@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileMenu.classList.remove('is-open');
     mobileOverlay.classList.remove('is-open');
   }
-  if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
+  // NOTE: hamburger menu wiring disabled per request — the current slide-out
+  // mobile-menu markup/design isn't correct yet, so leave the button inert
+  // until the right menu design is provided.
+  // if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
   if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
   if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
 

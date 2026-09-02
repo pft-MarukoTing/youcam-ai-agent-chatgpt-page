@@ -314,7 +314,9 @@ h1,h2,h3,h4,p{margin:0;}
   .header-hamburger__icon-mobile{display:block;width:32px;height:32px;}
   .site-header__right .btn-header{display:none;}
   .site-header__mobile-actions{display:flex;}
-  .site-header__mobile-actions .btn-header{display:inline-flex;padding:0 16px;font-size:16px;height:40px;}
+  .site-header__mobile-actions .header-icon-btn{width:32px;height:32px;flex:0 0 32px;}
+  .site-header__mobile-actions .header-icon-btn img{width:20px;height:20px;}
+  .site-header__mobile-actions .btn-header{display:inline-flex;padding:0 14px;font-size:15px;height:32px;}
 
   .agent-topbanner__inner{padding:40px 0;}
   .agent-topbanner__text h1{font-size:26px;}
