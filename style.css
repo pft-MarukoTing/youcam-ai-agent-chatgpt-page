@@ -71,7 +71,7 @@ h1,h2,h3,h4,p{margin:0;}
 .btn-primary{background:var(--brand);border-color:var(--brand);color:#fff;}
 .btn-outline{background:transparent;border-color:var(--brand);color:var(--brand);}
 .btn-uppercase{text-transform:uppercase;letter-spacing:.02em;}
-.btn-play-icon{flex:0 0 auto;margin-left:8px;color:currentColor;}
+.btn-arrow-icon{flex:0 0 auto;margin-left:8px;color:currentColor;}
 
 /* ===================================================================
    Header
